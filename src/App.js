@@ -14,7 +14,9 @@ const App = () => {
   return (
     <section className="section-center">
       <form onSubmit={handleSubmit}>
-        {alert.show && <Alert {...alert} removeAlert=/>}
+        {alert.show && <Alert {...alert} removeAlert={showAlert} list={list} />}
+        <h3 style={{marginBottom: "1.5rem", textAlign: "center"}}>ToDo List using Local Storage</h3>
+        <div className='test'
       </form>
     </section>
   )
